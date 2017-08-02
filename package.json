@@ -1,0 +1,47 @@
+{
+  "name": "meanie-angular-debounce",
+  "description": "A simple service for debouncing function calls",
+  "version": "1.0.0",
+  "homepage": "https://github.com/meanie/angular-debounce",
+  "author": {
+    "name": "Adam Reis",
+    "email": "adam@reis.nz",
+    "url": "http://adam.reis.nz/"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meanie/angular-debounce"
+  },
+  "bugs": {
+    "url": "https://github.com/meanie/angular-debounce/issues"
+  },
+  "instructions": {
+    "url": "https://github.com/meanie/angular-debounce#usage"
+  },
+  "keywords": [
+    "meanie",
+    "angular",
+    "angularjs",
+    "debounce"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "release": "gulp release",
+    "version": "npm run release && git add release/*",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-without-strict": "^0.0.4",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-wrapper": "^1.0.0"
+  }
+}
