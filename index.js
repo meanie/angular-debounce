@@ -1,2 +1,2 @@
-require('./release/meanie-angular-debounce.js');
+require('./release/angular-debounce.js');
 module.exports = 'Log.Service';

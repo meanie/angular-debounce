@@ -1,6 +1,6 @@
-# meanie-angular-debounce
+# @meanie/angular-debounce
 
-[![npm version](https://img.shields.io/npm/v/meanie-angular-debounce.svg)](https://www.npmjs.com/package/meanie-angular-debounce)
+[![npm version](https://img.shields.io/npm/v/@meanie/angular-debounce.svg)](https://www.npmjs.com/package/@meanie/angular-debounce)
 [![node dependencies](https://david-dm.org/meanie/angular-debounce.svg)](https://david-dm.org/meanie/angular-debounce)
 [![github issues](https://img.shields.io/github/issues/meanie/angular-debounce.svg)](https://github.com/meanie/angular-debounce/issues)
 [![codacy](https://img.shields.io/codacy/73649c548d484d06a6cfa5a5cca5a982.svg)](https://www.codacy.com/app/meanie/angular-debounce)
@@ -16,16 +16,16 @@ You can install this package using `yarn` or `npm`:
 
 ```shell
 #yarn
-yarn add meanie-angular-debounce
+yarn add @meanie/angular-debounce
 
 #npm
-npm install meanie-angular-debounce --save
+npm install @meanie/angular-debounce --save
 ```
 
-Include the script `node_modules/meanie-angular-debounce/release/meanie-angular-debounce.js` in your build process, or add it via a `<script>` tag to your `index.html`:
+Include the script `node_modules/@meanie/angular-debounce/release/angular-debounce.js` in your build process, or add it via a `<script>` tag to your `index.html`:
 
 ```html
-<script src="node_modules/meanie-angular-debounce/release/meanie-angular-debounce.js"></script>
+<script src="node_modules/@meanie/angular-debounce/release/angular-debounce.js"></script>
 ```
 
 Add `Debounce.Service` as a dependency for your app.
@@ -50,7 +50,7 @@ The `$debounce` service returns a promise which will be resolved with the return
 
 ## Issues & feature requests
 
-Please report any bugs, issues, suggestions and feature requests in the [meanie-angular-debounce issue tracker](https://github.com/meanie/angular-debounce/issues).
+Please report any bugs, issues, suggestions and feature requests in the [@meanie/angular-debounce issue tracker](https://github.com/meanie/angular-debounce/issues).
 
 ## Contributing
 
@@ -64,4 +64,4 @@ Pull requests are welcome! If you would like to contribute to Meanie, please che
 
 (MIT License)
 
-Copyright 2015-2017, [Adam Reis](http://adam.reis.nz)
+Copyright 2015-2017, [Adam Reis](https://adam.reis.nz)
