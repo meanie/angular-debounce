@@ -15,7 +15,7 @@ angular.module('Debounce.Service', [])
   /**
    * Debounce call
    */
-  return function $debounce(fn, time) {
+  return function $debounce(fn, time, ...args) {
 
     //Clear existing timeout
     if (debounces.has(fn)) {
@@ -26,7 +26,7 @@ angular.module('Debounce.Service', [])
     //Start new one
     const timeout = $timeout(() => {
       debounces.delete(fn);
-      return fn();
+      return fn(...args);
     }, time);
 
     //Save in debounces
