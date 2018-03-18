@@ -1,7 +1,7 @@
 /**
  * @meanie/angular-debounce * https://github.com/meanie/angular-debounce
  *
- * Copyright (c) 2017 Adam Reis <adam@reis.nz>
+ * Copyright (c) 2018 Adam Reis <adam@reis.nz>
  * License: MIT
  */
 (function (window, angular, undefined) {
@@ -25,6 +25,9 @@
      * Debounce call
      */
     return function $debounce(fn, time) {
+      for (var _len = arguments.length, args = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+        args[_key - 2] = arguments[_key];
+      }
 
       //Clear existing timeout
       if (debounces.has(fn)) {
@@ -35,7 +38,7 @@
       //Start new one
       var timeout = $timeout(function () {
         debounces.delete(fn);
-        return fn();
+        return fn.apply(undefined, args);
       }, time);
 
       //Save in debounces
